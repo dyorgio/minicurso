@@ -43,5 +43,5 @@ export class AppModule {}
 ```
 
 ## Para a exportação
-$ ionic cordova platform add <platform>
+$ ionic cordova platform add <platform>  
 $ ionic cordova build <platform>  
