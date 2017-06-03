@@ -1,42 +1,42 @@
 ### Projeto Template para Ionic 3 + Angular 4 + Firebase 3 + AngularFire2 4.0
 
-Instalar o NodeJs
-Instalar o Atom
+Instalar o NodeJs  
+Instalar o Atom  
 
-$ npm install -g ionic@latest
-$ ionic start meuProjeto sidemenu
-$ cd ./meuProjeto
-$ npm install angularfire2 firebase --save
-$ npm install promise-polyfill --save-exact
-$ ionic serve
+$ npm install -g ionic@latest  
+$ ionic start meuProjeto sidemenu  
+$ cd ./meuProjeto  
+$ npm install angularfire2 firebase --save  
+$ npm install promise-polyfill --save-exact  
+$ ionic serve  
 
-$ ionic g page alunosPage
-$ ionic g page alunoCriarPage
-$ ionic g page alunoEditarPage
-$ ionic g page alunoDetalhePage
+$ ionic g page alunosPage  
+$ ionic g page alunoCriarPage  
+$ ionic g page alunoEditarPage  
+$ ionic g page alunoDetalhePage  
 
-## No arquivo app.module.ts:
+## No arquivo app.module.ts:  
 
-...
-import { AngularFireModule } from 'angularfire2';
+...  
+import { AngularFireModule } from 'angularfire2';  
 
-export const environment = {
-  production: false,
-  firebase: {
-    apiKey: '<your-key>',
-    authDomain: '<your-project-authdomain>',
-    databaseURL: '<your-database-URL>',
-    projectId: '<your-project-id>',
-    storageBucket: '<your-storage-bucket>',
-    messagingSenderId: '<your-messaging-sender-id>'
-  }
-};
+export const environment = {  
+  production: false,  
+  firebase: {  
+    apiKey: '<your-key>',  
+    authDomain: '<your-project-authdomain>',  
+    databaseURL: '<your-database-URL>',  
+    projectId: '<your-project-id>',  
+    storageBucket: '<your-storage-bucket>',  
+    messagingSenderId: '<your-messaging-sender-id>'  
+  }  
+};  
 
-@NgModule({
-  imports: [
-    ...,
-    AngularFireModule.initializeApp(environment.firebase)
-  ],
-  ...
-})
-export class AppModule {}
+@NgModule({  
+  imports: [  
+    ...,  
+    AngularFireModule.initializeApp(environment.firebase)  
+  ],  
+  ...  
+})  
+export class AppModule {}  
