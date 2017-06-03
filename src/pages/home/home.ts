@@ -11,4 +11,7 @@ export class HomePage {
 
   }
 
+  vaParaAlunos(){
+    this.navCtrl.setRoot('AlunosPage');
+  }
 }
