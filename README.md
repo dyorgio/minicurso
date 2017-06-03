@@ -1,4 +1,4 @@
-### Projeto Template para Ionic 3 + Angular 4 + Firebase 4 + AngularFire2 4.0
+## Projeto Template para Ionic 3 + Angular 4 + Firebase 4 + AngularFire2 4.0
 
 Instalar o NodeJs  
 Instalar o Atom  
@@ -15,10 +15,9 @@ $ ionic g page alunoCriarPage
 $ ionic g page alunoEditarPage  
 $ ionic g page alunoDetalhePage  
 
-## No arquivo app.module.ts:  
+### No arquivo app.module.ts:  
 
-```javascript
-...  
+```typescript
 import { AngularFireModule } from 'angularfire2';  
 
 export const environment = {  
