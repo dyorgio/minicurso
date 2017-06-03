@@ -1,27 +1,42 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+### Projeto Template para Ionic 3 + Angular 4 + Firebase 3 + AngularFire2 4.0
 
-## How to use this template
+Instalar o NodeJs
+Instalar o Atom
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+$ npm install -g ionic@latest
+$ ionic start meuProjeto sidemenu
+$ cd ./meuProjeto
+$ npm install angularfire2 firebase --save
+$ npm install promise-polyfill --save-exact
+$ ionic serve
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+$ ionic g page alunosPage
+$ ionic g page alunoCriarPage
+$ ionic g page alunoEditarPage
+$ ionic g page alunoDetalhePage
 
-### With the Ionic CLI:
+## No arquivo app.module.ts:
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+...
+import { AngularFireModule } from 'angularfire2';
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
-```
+export const environment = {
+  production: false,
+  firebase: {
+    apiKey: '<your-key>',
+    authDomain: '<your-project-authdomain>',
+    databaseURL: '<your-database-URL>',
+    projectId: '<your-project-id>',
+    storageBucket: '<your-storage-bucket>',
+    messagingSenderId: '<your-messaging-sender-id>'
+  }
+};
 
-Then, to run it, cd into `mySideMenu` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
-npm install promise-polyfill --save-exact
+@NgModule({
+  imports: [
+    ...,
+    AngularFireModule.initializeApp(environment.firebase)
+  ],
+  ...
+})
+export class AppModule {}
