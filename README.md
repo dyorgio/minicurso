@@ -1,4 +1,4 @@
-### Projeto Template para Ionic 3 + Angular 4 + Firebase 3 + AngularFire2 4.0
+### Projeto Template para Ionic 3 + Angular 4 + Firebase 4 + AngularFire2 4.0
 
 Instalar o NodeJs  
 Instalar o Atom  
