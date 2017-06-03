@@ -17,6 +17,7 @@ $ ionic g page alunoDetalhePage
 
 ## No arquivo app.module.ts:  
 
+```javascript
 ...  
 import { AngularFireModule } from 'angularfire2';  
 
@@ -39,4 +40,5 @@ export const environment = {
   ],  
   ...  
 })  
-export class AppModule {}  
+export class AppModule {}
+```  
