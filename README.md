@@ -8,12 +8,18 @@ $ ionic start meuProjeto sidemenu
 $ cd ./meuProjeto  
 $ npm install angularfire2 firebase --save  
 $ npm install promise-polyfill --save-exact  
-$ ionic serve  
 
 $ ionic g page alunosPage  
 $ ionic g page alunoCriarPage  
 $ ionic g page alunoEditarPage  
-$ ionic g page alunoDetalhePage  
+$ ionic g page alunoDetalhePage
+
+$ ionic serve  
+
+## Crie um projeto no Firebase Console
+[Firebase](https://console.firebase.google.com/?hl=pt-BR)  
+
+Copie as configurações do link "Adicionar o Firebase ao seu aplicativo da Web" na variável "environment" do código a seguir.    
 
 ### No arquivo app.module.ts:  
 
